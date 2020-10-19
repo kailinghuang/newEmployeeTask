@@ -20,3 +20,4 @@ web application and get the data from EmployeeTaskAPI by httpclient
 
 ## 3. EmployeeTaskAPIUnitTest
 the test for EmployeeTaskAPI's 2 controller
+the controller unit test coverage is 100 %.
