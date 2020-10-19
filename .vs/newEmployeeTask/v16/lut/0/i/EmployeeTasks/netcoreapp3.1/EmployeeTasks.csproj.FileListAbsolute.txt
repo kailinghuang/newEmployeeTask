@@ -8,7 +8,6 @@ C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\b\E
 C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\b\EmployeeTasks\bin\Debug\netcoreapp3.1\EmployeeTasks.dll
 C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\b\EmployeeTasks\bin\Debug\netcoreapp3.1\EmployeeTasks.Views.dll
 C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\b\EmployeeTasks\bin\Debug\netcoreapp3.1\EmployeeTasks.Views.pdb
-C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\i\EmployeeTasks\netcoreapp3.1\EmployeeTasks.csprojAssemblyReference.cache
 C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\i\EmployeeTasks\netcoreapp3.1\EmployeeTasks.AssemblyInfoInputs.cache
 C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\i\EmployeeTasks\netcoreapp3.1\EmployeeTasks.AssemblyInfo.cs
 C:\Users\v-kailhu\source\repos\newEmployeeTask\.vs\newEmployeeTask\v16\lut\0\i\EmployeeTasks\netcoreapp3.1\EmployeeTasks.RazorAssemblyInfo.cache

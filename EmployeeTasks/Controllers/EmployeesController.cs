@@ -42,19 +42,7 @@ namespace EmployeeTasks.Controllers
                 return NotFound();
             }
 
-            List<TaskModel> taskList = await employeeTaskAPIClient.GetTasksAsync();
-            var tasks = taskList.Where(m => m.employeeId == id).ToList();
-
-            var employeeTaskDetail = new EmployeeTaskDetail
-            {
-                employeeId = employee.employeeId,
-                firstName = employee.firstName,
-                lastName = employee.lastName,
-                hiredDate = employee.hiredDate,
-                tasks= tasks
-            };
-
-            return View(employeeTaskDetail);
+            return View(employee);
         }
 
         // GET: Employees/Create

@@ -29,16 +29,25 @@ namespace EmployeeTaskAPI.Controllers
 
         // GET: api/Employee/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<EmployeeModel>> GetEmployeeModel(int id)
+        public async Task<ActionResult<EmployeeTaskDetail>> GetEmployeeModel(int id)
         {
-            var employeeModel = await _context.Employee.FindAsync(id);
-
-            if (employeeModel == null)
+            var employee = await _context.Employee.FindAsync(id);
+            if (employee == null)
             {
                 return NotFound();
             }
+            var tasks = await _context.Task.Where(m => m.employeeId == id).ToListAsync();
 
-            return employeeModel;
+            var employeeTaskDetail = new EmployeeTaskDetail
+            {
+                employeeId = employee.employeeId,
+                firstName = employee.firstName,
+                lastName = employee.lastName,
+                hiredDate = employee.hiredDate,
+                tasks = tasks
+            };
+
+            return employeeTaskDetail;
         }
 
         // PUT: api/Employee/5

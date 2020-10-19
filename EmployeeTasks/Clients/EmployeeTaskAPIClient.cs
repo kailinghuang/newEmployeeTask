@@ -106,9 +106,9 @@ namespace EmployeeTasks.Clients
             return EmpInfo;
         }
 
-        public async Task<EmployeeModel> GetOneEmployeeAsync(int? id)
+        public async Task<EmployeeTaskDetail> GetOneEmployeeAsync(int? id)
         {
-            EmployeeModel EmpInfo = new EmployeeModel();
+            EmployeeTaskDetail EmpInfo = new EmployeeTaskDetail();
 
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -119,7 +119,7 @@ namespace EmployeeTasks.Clients
             { 
                 var EmpResponse = Res.Content.ReadAsStringAsync().Result;
 
-                EmpInfo = JsonConvert.DeserializeObject<EmployeeModel>(EmpResponse);
+                EmpInfo = JsonConvert.DeserializeObject<EmployeeTaskDetail>(EmpResponse);
             }
             
             return EmpInfo;
