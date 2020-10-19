@@ -1,0 +1,78 @@
+﻿@model EmployeeTasks.Models.EmployeeTaskDetail
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>EmployeeModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.employeeId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.employeeId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.hiredDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.hiredDate)
+        </dd>
+    </dl>
+</div>
+
+<table class="table">
+    <thead>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Task ID</td>
+            <td>Task Name</td>
+            <td>Start Date</td>
+            <td>Due Date</td>
+        </tr>
+        @foreach (var item in Model.tasks)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.taskId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.taskName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.startTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dueTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-controller="Tasks" asp-route-id="@item.taskId">Edit</a> |
+                <a asp-action="Details" asp-controller="Tasks" asp-route-id="@item.taskId">Details</a> |
+                <a asp-action="Delete" asp-controller="Tasks" asp-route-id="@item.taskId">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.employeeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
