@@ -31,13 +31,14 @@ namespace EmployeeTaskAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<TaskModel>> GetTaskModel(int id)
         {
+            
             var taskModel = await _context.Task.FindAsync(id);
 
             if (taskModel == null)
             {
                 return NotFound();
             }
-
+            
             return taskModel;
         }
 
