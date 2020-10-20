@@ -33,7 +33,3 @@ the controller unit test coverage is 100 %.
 the test base on the TestServer + EF Core In Memory DB Together.
 I did CRUD for the TaskController and EmployeeController
 
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="https://github.com/kailinghuang/newEmployeeTask/blob/main/RunVideo.mp4" type="video/mp4">
-      <p>Your user agent does not support the HTML5 Video element.</p>
-</video>
