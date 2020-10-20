@@ -1,4 +1,8 @@
 # newEmployeeTask
+Usage:
+1. could run EmployeeTaskAPI Directly. then it could suplly RESTFUL API.
+2. if you want to run EmployeeTasks web application, it need to trigger the EmployeeTaskAPI (Multiple Startup Project) together. all data show in EmployeeTasks is from EmployeeTaskAPI.
+
 # Project:
 ## 1. EmployeeTaskAPI
 •	Create RESTful API project with following functionalities:
