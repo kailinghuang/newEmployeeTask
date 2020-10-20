@@ -1,4 +1,8 @@
 # newEmployeeTask
+Usage:
+1. could run EmployeeTaskAPI Directly. then it could suplly RESTFUL API.
+2. if you want to run EmployeeTasks web application, it need to trigger the EmployeeTaskAPI (Multiple Startup Project) together. all data show in EmployeeTasks is from EmployeeTaskAPI.
+
 # Project:
 ## 1. EmployeeTaskAPI
 •	Create RESTful API project with following functionalities:
@@ -16,8 +20,15 @@ iii.	Deadline
 
 ## 2. EmployeeTasks
 web application and get the data from EmployeeTaskAPI by httpclient
+then display page here. could do CRUD operation in web UI.
 
 
 ## 3. EmployeeTaskAPIUnitTest
 the test for EmployeeTaskAPI's 2 controller
 the controller unit test coverage is 100 %.
+
+
+## 4. EmployeeTaskAPIIntegrationTest
+
+the test base on the TestServer + EF Core In Memory DB Together.
+I did CRUD for the TaskController and EmployeeController
