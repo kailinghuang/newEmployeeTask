@@ -16,6 +16,7 @@ iii.	Deadline
 
 ## 2. EmployeeTasks
 web application and get the data from EmployeeTaskAPI by httpclient
+then display page here. could do CRUD operation in web UI.
 
 
 ## 3. EmployeeTaskAPIUnitTest
