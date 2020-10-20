@@ -117,7 +117,14 @@ namespace EmployeeTasks.Controllers
                 return NotFound();
             }
 
-            var employeeModel =  await employeeTaskAPIClient.GetOneEmployeeAsync(id);
+            var employeeDetail =  await employeeTaskAPIClient.GetOneEmployeeAsync(id);
+            var employeeModel = new EmployeeModel()
+            {
+                employeeId = employeeDetail.employeeId,
+                firstName = employeeDetail.firstName,
+                lastName = employeeDetail.lastName,
+                hiredDate = employeeDetail.hiredDate
+            };
             if (employeeModel == null)
             {
                 return NotFound();
