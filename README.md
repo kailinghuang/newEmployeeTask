@@ -21,3 +21,9 @@ web application and get the data from EmployeeTaskAPI by httpclient
 ## 3. EmployeeTaskAPIUnitTest
 the test for EmployeeTaskAPI's 2 controller
 the controller unit test coverage is 100 %.
+
+
+## 4. EmployeeTaskAPIIntegrationTest
+
+the test base on the TestServer + EF Core In Memory DB Together.
+I did CRUD for the TaskController and EmployeeController
